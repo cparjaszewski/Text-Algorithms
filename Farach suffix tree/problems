@@ -1,0 +1,31 @@
+Text algorithms - Farach suffix tree implementation
+
+Krzysztof Parjaszewski - student, 4th year
+Institute of Computer Science, 
+Department of Mathematics and Computer Science
+University of Wroclaw
+
+This document contains open/closed, testing todos and other problems, that have been met during implementation:
+
+Open:
+1. Suffix link.
+2. Creating the even tree basing on the odd tree.
+3. Merging odd and even trees with weak oracle
+4. Precompute lcp and lca arrays in linear time.
+5. Perform the unmerge procedure
+
+Closed:
+1. Radix sort the pairs (O(n * d) time, where d is in 1..10).
+2. Ranking the pairs and creating the S' integer string.
+3. Creating the ad-hoc tree.
+4. Compacted trie both depending on prefixes and suffixes.
+
+Need testing:
+1. Compacted trie with all node-listing, children counters, L/rank values etc.
+2. Radix sorting
+
+Other:
+1. If we really want to implement the linear time algorithm, there is a need to create the linear time lcp array for the suffix array.
+The "simple" algorithm has been described in: [ "The LCA Problem Revisited"; Michael A. Bender & Martin Farach-Colton; Rutgers University; 
+May 16, 2000]
+2. D. Harel and R.E. Tarjan. Fast algorithms for finding nearest common ancestors. SIAM. Journal on Computing.
